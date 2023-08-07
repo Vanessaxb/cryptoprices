@@ -8,7 +8,7 @@ export default function Price (props) {
   const params = useParams()
   const symbol = params.symbol
   // Using the other two variables to create our URL
-  const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${process.env.REACT_APP_COINAPI_KEY}`;
+  const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${process.env.REACT_APP_COINAPI_KEY}`;
 
   //state to hold the coin data
   const [coin, setCoin] = useState("null");
